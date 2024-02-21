@@ -1,0 +1,394 @@
+[
+    {
+      "id": 1,
+      "nome": "The Witcher 3: Wild Hunt",
+      "categoria": "RPG",
+      "prezzo": "29.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Witcher_3_cover_art.jpg/220px-Witcher_3_cover_art.jpg"
+      
+    },
+    {
+      "id": 2,
+      "nome": "Grand Theft Auto V",
+      "categoria": "Azione",
+      "prezzo": "39.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png"
+
+    },
+    {
+      "id": 3,
+      "nome": "Minecraft",
+      "categoria": "Sandbox",
+      "prezzo": "19.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png"
+
+    },
+    {
+      "id": 4,
+      "nome": "Fortnite",
+      "categoria": "Battle Royale",
+      "prezzo": "0.00",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Fortnite_Save_The_World.jpg/220px-Fortnite_Save_The_World.jpg"
+
+    },
+    {
+      "id": 5,
+      "nome": "Overwatch",
+      "categoria": "FPS",
+      "prezzo": "24.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Overwatch_cover_art.jpg/220px-Overwatch_cover_art.jpg"
+
+    },
+    {
+      "id": 6,
+      "nome": "Final Fantasy XV",
+      "categoria": "RPG",
+      "prezzo": "49.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/5/5a/FF_XV_cover_art.jpg"
+
+    },
+    {
+      "id": 7,
+      "nome": "Among Us",
+      "categoria": "Party",
+      "prezzo": "4.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/9/9a/Among_Us_cover_art.jpg"
+
+    },
+    {
+      "id": 8,
+      "nome": "Rocket League",
+      "categoria": "Sport",
+      "prezzo": "14.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Rocket_League_coverart.jpg/640px-Rocket_League_coverart.jpg"
+
+    },
+    {
+      "id": 9,
+      "nome": "Call of Duty: Warzone",
+      "categoria": "Battle Royale",
+      "prezzo": "29.90",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/0/01/Call_of_Duty_Warzone_cover.png"
+
+    },
+    {
+      "id": 10,
+      "nome": "Assassin's Creed Odyssey",
+      "categoria": "Azione",
+      "prezzo": "34.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/thumb/9/99/ACOdysseyCoverArt.png/220px-ACOdysseyCoverArt.png"
+
+    },
+    {
+      "id": 11,
+      "nome": "FIFA 23",
+      "categoria": "Sport",
+      "prezzo": "59.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/a/a6/FIFA_23_Cover.jpg"
+
+    },
+    {
+      "id": 12,
+      "nome": "The Elder Scrolls V: Skyrim",
+      "categoria": "RPG",
+      "prezzo": "39.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/1/15/The_Elder_Scrolls_V_Skyrim_cover.png"
+
+    },
+    {
+      "id": 13,
+      "nome": "Splatoon 2",
+      "categoria": "Shooter",
+      "prezzo": "49.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/4/49/Splatoon_2.jpg"
+
+    },
+    {
+      "id": 14,
+      "nome": "League of Legends",
+      "categoria": "MOBA",
+      "prezzo": "15.90",
+      "url" : "https://s3.amazonaws.com/mlg-gamebattles-production/gb-games-images/afe02c1e-a723-40e3-91f3-f1067db67d86-300x400?v=1478728176"
+
+    },
+    {
+      "id": 15,
+      "nome": "Cuphead",
+      "categoria": "Platformer",
+      "prezzo": "19.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/e/eb/Cuphead_%28artwork%29.png"
+
+    },
+    {
+      "id": 16,
+      "nome": "Doom Eternal",
+      "categoria": "FPS",
+      "prezzo": "44.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/9/9d/Cover_Art_of_Doom_Eternal.png"
+
+    },
+    {
+      "id": 17,
+      "nome": "Animal Crossing",
+      "categoria": "Simulazione",
+      "prezzo": "54.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/9/9e/Animal_Crossing_Logo.png"
+
+    },
+    {
+      "id": 18,
+      "nome": "Rainbow Six Siege",
+      "categoria": "Tattico",
+      "prezzo": "29.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/Tom_Clancy%27s_Rainbow_Six_Siege_cover_art.jpg/220px-Tom_Clancy%27s_Rainbow_Six_Siege_cover_art.jpg"
+
+    },
+    {
+      "id": 19,
+      "nome": "World of Warcraft",
+      "categoria": "MMORPG",
+      "prezzo": "59.90",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/6/65/World_of_Warcraft.png"
+
+    },
+    {
+      "id": 20,
+      "nome": "NBA 2K23",
+      "categoria": "Sport",
+      "prezzo": "49.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/d/d7/NBA_2K23_cover_art.jpg"
+
+    },
+    {
+      "id": 21,
+      "nome": "Subnautica",
+      "categoria": "Avventura",
+      "prezzo": "24.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/Subnautica_cover_art.png/220px-Subnautica_cover_art.png"
+
+    },
+    {
+      "id": 22,
+      "nome": "Hollow Knight",
+      "categoria": "Metroidvania",
+      "prezzo": "9.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/0/04/Hollow_Knight_first_cover_art.webp"
+
+    },
+    {
+      "id": 23,
+      "nome": "Genshin Impact",
+      "categoria": "Action RPG",
+      "prezzo": "7.90",
+      "url" : "https://thumbnails.pcgamingwiki.com/0/0a/Genshin_Impact_cover.jpg/300px-Genshin_Impact_cover.jpg"
+
+    },
+    {
+      "id": 24,
+      "nome": "No Man's Sky",
+      "categoria": "Esplorazione",
+      "prezzo": "29.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/6/67/No_Man%27s_Sky.jpg"
+
+    },
+    {
+      "id": 25,
+      "nome": "Dark Souls III",
+      "categoria": "Action RPG",
+      "prezzo": "39.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Dark_souls_3_cover_art.jpg/220px-Dark_souls_3_cover_art.jpg"
+
+    },
+    {
+      "id": 26,
+      "nome": "Red Dead Redemption 2",
+      "categoria": "Azione",
+      "prezzo": "49.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg"
+
+    },
+    {
+      "id": 27,
+      "nome": "The Sims 4",
+      "categoria": "Simulazione",
+      "prezzo": "39.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/7/7f/Sims4_Rebrand.png"
+
+    },
+    {
+      "id": 28,
+      "nome": "Counter-Strike",
+      "categoria": "FPS",
+      "prezzo": "14.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/6/6e/CSGOcoverMarch2020.jpg"
+
+    },
+    {
+      "id": 29,
+      "nome": "Monster Hunter: World",
+      "categoria": "Action RPG",
+      "prezzo": "29.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/1/1b/Monster_Hunter_World_cover_art.jpg"
+
+    },
+    {
+      "id": 30,
+      "nome": "Mortal Kombat 11",
+      "categoria": "Picchiaduro",
+      "prezzo": "34.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/7/7e/Mortal_Kombat_11_cover_art.png"
+
+    },
+    {
+      "id": 31,
+      "nome": "Terraria",
+      "categoria": "Sandbox",
+      "prezzo": "9.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/1/1a/Terraria_Steam_artwork.jpg"
+
+    },
+    {
+      "id": 32,
+      "nome": "Dota 2",
+      "categoria": "MOBA",
+      "prezzo": "42.90",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/3/31/Dota_2_Steam_artwork.jpg"
+
+    },
+    {
+      "id": 33,
+      "nome": "Resident Evil Village",
+      "categoria": "Survival Horror",
+      "prezzo": "44.99",
+      "url" : "https://thumbnails.pcgamingwiki.com/7/76/Resident_Evil_Village_cover.jpg/300px-Resident_Evil_Village_cover.jpg"
+
+    },
+    {
+      "id": 34,
+      "nome": "PUBG",
+      "categoria": "Battle Royale",
+      "prezzo": "29.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/9/9f/Pubgbattlegrounds.png"
+
+    },
+    {
+      "id": 35,
+      "nome": "The Last of Us Part II",
+      "categoria": "Avventura",
+      "prezzo": "49.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/thumb/4/4f/TLOU_P2_Box_Art_2.png/220px-TLOU_P2_Box_Art_2.png"
+
+    },
+    {
+      "id": 36,
+      "nome": "Civilization VI",
+      "categoria": "Strategia",
+      "prezzo": "39.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/3/3b/Civilization_VI_cover_art.jpg"
+
+    },
+    {
+      "id": 37,
+      "nome": "A Plague Tale: Innocence",
+      "categoria": "Avventura",
+      "prezzo": "24.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/1/1d/A_Plague_Tale_cover_art.jpg"
+
+    },
+    {
+      "id": 38,
+      "nome": "Stardew Valley",
+      "categoria": "Simulazione",
+      "prezzo": "14.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/f/fd/Logo_of_Stardew_Valley.png"
+
+    },
+    {
+      "id": 39,
+      "nome": "Warframe",
+      "categoria": "Sparatutto",
+      "prezzo": "15.50",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/b/bd/Warframe_Cover_Art.png"
+
+    },
+    {
+      "id": 40,
+      "nome": "Halo Infinite",
+      "categoria": "FPS",
+      "prezzo": "59.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/1/14/Halo_Infinite.png"
+
+    },
+    {
+      "id": 42,
+      "nome": "Cyberpunk 2077",
+      "categoria": "RPG",
+      "prezzo": "39.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/9/9f/Cyberpunk_2077_box_art.jpg"
+
+    },
+    {
+      "id": 43,
+      "nome": "Rust",
+      "categoria": "Sopravvivenza",
+      "prezzo": "24.99",
+      "url" : "https://nerdswithmics.com/wp-content/uploads/2022/05/rust-200x300.jpg"
+
+    },
+    {
+      "id": 44,
+      "nome": "Ghost of Tsushima",
+      "categoria": "Azione",
+      "prezzo": "49.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/b/b6/Ghost_of_Tsushima.jpg"
+
+    },
+    {
+      "id": 45,
+      "nome": "Ori and the Will of the Wisps",
+      "categoria": "Platformer",
+      "prezzo": "29.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/9/94/Ori_and_the_Will_of_the_Wisps.jpg"
+
+    },
+    {
+      "id": 46,
+      "nome": "Sea of Thieves",
+      "categoria": "Azione",
+      "prezzo": "19.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/7/77/Sea_of_thieves_cover_art.jpg"
+
+    },
+    {
+      "id": 47,
+      "nome": "Destiny 2",
+      "categoria": "FPS",
+      "prezzo": "29.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/0/05/Destiny_2_%28artwork%29.jpg"
+
+    },
+    {
+      "id": 48,
+      "nome": "Fall Guys",
+      "categoria": "Battle Royale",
+      "prezzo": "14.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Fall_Guys_cover.jpg/220px-Fall_Guys_cover.jpg"
+
+    },
+    {
+      "id": 49,
+      "nome": "Divinity: Original Sin 2",
+      "categoria": "RPG",
+      "prezzo": "44.99",
+      "url" : "https://static.tvtropes.org/pmwiki/pub/images/dos2de.png"
+
+    },
+    {
+      "id": 50,
+      "nome": "God of War Ragnarok",
+      "categoria": "Azione",
+      "prezzo": "39.99",
+      "url" : "https://upload.wikimedia.org/wikipedia/en/e/ee/God_of_War_Ragnar%C3%B6k_cover.jpg"
+    }
+  ]
+  

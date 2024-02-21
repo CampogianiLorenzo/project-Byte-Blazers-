@@ -1,0 +1,257 @@
+/* CSS HEX */
+/* --russian-violet: #10002bff;
+--russian-violet-2: #240046ff;
+--persian-indigo: #3c096cff;
+--tekhelet: #5a189aff;
+--french-violet: #7b2cbfff;
+--amethyst: #9d4eddff;
+--heliotrope: #c77dffff;
+--mauve: #e0aaffff; */
+
+
+
+*{
+    font-family: 'Roboto', sans-serif;
+    /* border: 2px solid green; */
+}
+
+
+body{
+    background: #0d1117;
+    overflow-x: hidden;
+}
+
+.margin-custom{
+    margin-top: 150px;
+    margin-bottom: 20vh;
+}
+/* CLASSI GENERALI */
+
+
+/* NAVBAR */
+.bg-navCustom {
+    background-color: #34495e;
+}
+
+.LogoNav-custom {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.container-icon {
+    width: 100px;
+    height: 100%;
+}
+
+.box-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.box-icon > i {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.box-icon > i:hover {
+    color: #e74c3c;
+}
+
+.icon-custom {
+    color: #fff;
+}
+
+/* Clearing floats */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    zoom: 1;
+}
+
+/* Mini reset, no margins, paddings or bullets */
+.menu,
+.submenu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Main level */
+.menu {			
+    margin: 0px auto;
+    width: 800px;
+    /* http://www.red-team-design.com/horizontal-centering-using-css-fit-content-value */
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    width: fit-content;	
+}
+
+.menu > li {
+    background: #34495e;
+    float: left;
+    position: relative;
+    transform: skewX(25deg);
+    transition: 0.5s;
+}
+
+.menu a {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Arial, Helvetica;
+    font-size: 14px;
+}		
+
+.menu li:hover {
+    background: #e74c3c;
+}		
+
+.menu > li > a {
+    transform: skewX(-25deg);
+    padding: 1em 2em;
+}
+
+/* Dropdown */
+.submenu {
+    position: absolute;
+    width: 200px;
+    left: 50%; margin-left: -100px;
+    transform: skewX(-25deg);
+    transform-origin: left top;
+}
+
+.submenu li {
+    background-color: #34495e;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;		
+}
+
+.submenu > li > a {
+    padding: 1em 2em;		
+}
+
+.submenu > li::after {
+    content: '';
+    position: absolute;
+    top: -125%;
+    height: 100%;
+    width: 100%;			
+    box-shadow: 0 0 50px rgba(0, 0, 0, .9);			
+}		
+
+/* Odd stuff */
+.submenu > li:nth-child(odd){
+    transform: skewX(-25deg) translateX(0);
+}
+
+.submenu > li:nth-child(odd) > a {
+    transform: skewX(25deg);
+}
+
+.submenu > li:nth-child(odd)::after {
+    right: -50%;
+    transform: skewX(-25deg) rotate(3deg);
+}				
+
+/* Even stuff */
+.submenu > li:nth-child(even){
+    transform: skewX(25deg) translateX(0);
+}
+
+.submenu > li:nth-child(even) > a {
+    transform: skewX(-25deg);
+}
+
+.submenu > li:nth-child(even)::after {
+    left: -50%;
+    transform: skewX(25deg) rotate(3deg);
+}
+
+/* Show dropdown */
+.submenu,
+.submenu li {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.submenu li {
+    transition: .2s ease transform;
+    transition: 0.5s;
+}
+
+.menu > li:hover .submenu,
+.menu > li:hover .submenu li {
+    opacity: 1;
+    visibility: visible;
+}		
+
+.menu > li:hover .submenu li:nth-child(even){
+    transform: skewX(25deg) translateX(15px);			
+}
+
+.menu > li:hover .submenu li:nth-child(odd){
+    transform: skewX(-25deg) translateX(-15px);			
+}
+/* NAVBAR */
+
+
+
+/* annunci */
+.card1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #e4f600;
+    border: 2px solid black;
+    border-radius: 40px;
+    overflow: hidden;
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.card1:hover{
+    box-shadow: rgba(229, 229, 229, 0.3) 0px 19px 38px, rgba(229, 229, 229, 0.22) 0px 15px 12px;
+}
+
+.card1-img{
+    border: 2px solid black;
+    border-radius: 40px;
+    width: 100%;
+    height: 350px; /* Altezza dell'immagine, regola secondo le tue esigenze */
+    /* object-fit: cover; */
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.card1-content{
+    padding: 10px;
+}
+
+/* fine annunci */
+
+/* filtri */
+
+.filtri{
+    background-color: #2a2a2a;
+    color: #e4f600;
+}
+
+.customh2accordion{
+    color: #e4f600;
+}

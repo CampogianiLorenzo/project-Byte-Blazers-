@@ -1,0 +1,731 @@
+
+*{
+    font-family: 'Roboto', sans-serif;
+    /* border: 2px solid green; */
+}
+
+
+body{
+    overflow-x: hidden;
+}
+
+.margin-custom{
+    margin-top: 150px;
+    margin-bottom: 20vh;
+}
+/* CLASSI GENERALI */
+
+/* NAVBAR */
+.bg-navCustom {
+    background-color: #34495e;
+}
+
+.LogoNav-custom {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.container-icon {
+    width: 100px;
+    height: 100%;
+}
+
+.box-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.box-icon > i {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.box-icon > i:hover {
+    color: #e74c3c;
+}
+
+.icon-custom {
+    color: #fff;
+}
+
+/* Clearing floats */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    zoom: 1;
+}
+
+/* Mini reset, no margins, paddings or bullets */
+.menu,
+.submenu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Main level */
+.menu {			
+    margin: 0px auto;
+    width: 800px;
+    /* http://www.red-team-design.com/horizontal-centering-using-css-fit-content-value */
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    width: fit-content;	
+}
+
+.menu > li {
+    background: #34495e;
+    float: left;
+    position: relative;
+    transform: skewX(25deg);
+    transition: 0.5s;
+}
+
+.menu a {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Arial, Helvetica;
+    font-size: 14px;
+}		
+
+.menu li:hover {
+    background: #e74c3c;
+}		
+
+.menu > li > a {
+    transform: skewX(-25deg);
+    padding: 1em 2em;
+}
+
+/* Dropdown */
+.submenu {
+    position: absolute;
+    width: 200px;
+    left: 50%; margin-left: -100px;
+    transform: skewX(-25deg);
+    transform-origin: left top;
+}
+
+.submenu li {
+    background-color: #34495e;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;		
+}
+
+.submenu > li > a {
+    padding: 1em 2em;		
+}
+
+.submenu > li::after {
+    content: '';
+    position: absolute;
+    top: -125%;
+    height: 100%;
+    width: 100%;			
+    box-shadow: 0 0 50px rgba(0, 0, 0, .9);			
+}		
+
+/* Odd stuff */
+.submenu > li:nth-child(odd){
+    transform: skewX(-25deg) translateX(0);
+}
+
+.submenu > li:nth-child(odd) > a {
+    transform: skewX(25deg);
+}
+
+.submenu > li:nth-child(odd)::after {
+    right: -50%;
+    transform: skewX(-25deg) rotate(3deg);
+}				
+
+/* Even stuff */
+.submenu > li:nth-child(even){
+    transform: skewX(25deg) translateX(0);
+}
+
+.submenu > li:nth-child(even) > a {
+    transform: skewX(-25deg);
+}
+
+.submenu > li:nth-child(even)::after {
+    left: -50%;
+    transform: skewX(25deg) rotate(3deg);
+}
+
+/* Show dropdown */
+.submenu,
+.submenu li {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.submenu li {
+    transition: .2s ease transform;
+    transition: 0.5s;
+}
+
+.menu > li:hover .submenu,
+.menu > li:hover .submenu li {
+    opacity: 1;
+    visibility: visible;
+}		
+
+.menu > li:hover .submenu li:nth-child(even){
+    transform: skewX(25deg) translateX(15px);			
+}
+
+.menu > li:hover .submenu li:nth-child(odd){
+    transform: skewX(-25deg) translateX(-15px);			
+}
+/* NAVBAR */
+
+/* HEADER */
+.mg_header {
+    margin-top: 15vh;
+}
+
+.imgHeader {
+    background: url(./media/timothy-colin-pausemenugif04.gif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    image-rendering:optimizeQuality;
+    
+}
+
+.boxTestoHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding-left: 20px;
+    padding-top: 270px;
+}
+
+.headerTitle {
+    font-family: 'Black Ops One', sans-serif;
+    font-size: 80px;
+}
+
+.discount{
+    background-color: orange;
+    border-radius: 5px 5px ;
+    font-weight: 700;
+    margin-left: 20px;
+    
+}
+
+
+.discount:after {
+    background-color: orange;
+    border-radius: 6px 3px;
+    
+}
+
+.headerButton {
+    padding: 15px;
+    background-color: transparent;
+    border: 4px solid white;
+    border-radius: 7px;
+    width: 300px;
+    margin-left:95px; 
+}
+
+.headerButton:hover {
+    padding: 17px;
+    border: 4px solid white;
+    color: rgb(from gold r g b);
+    transition: 0.5s;
+    margin-left:95px;
+}
+
+/* FIEN HEADER */
+
+/* CARDS */
+.card-custom{
+    width: 350px;
+    height: 250px;
+    background-color: #222;
+    border: 2px solid rgb(2, 2, 2);
+    border-radius: 15px;
+    box-shadow: rgba(253, 253, 254, 0.25) 0px 50px 100px -20px, rgba(254, 254, 254, 0.3) 0px 30px 60px -30px, rgba(254, 255, 255, 0.35) 0px -2px 6px 0px inset;
+    cursor: pointer;
+}
+
+.img-custom2{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    border: 2px solid#000;
+}
+.text-card-animate{
+    color:#b90e0e ;
+}
+
+/* CARDS */
+
+
+/*  */
+.container_counter {
+    width: 100%;
+}
+/*  */
+
+/* SEZIONE GOTY */
+.container {
+    margin-left: 1.2%;
+    position: relative;
+}
+.titoloGoty {
+    position: absolute;
+    left: 18%;
+    bottom: 100%;
+    color:#b90e0e ;
+}
+.product_card_custom {
+    width: 350px;
+    height: 380px;
+    position: relative;
+}
+
+.bg1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./media/horizonFW.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./media/gowr.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./media/er.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./media/stray.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg5 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./media/xenoblade.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg6 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./media/PlagueTale.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg7 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./media/Baldur3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg8 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./media/alan2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg9 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./media/sp2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg10 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./media/RE4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg11 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./media/SMW.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg12 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./media/ZTotK.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.product_card_custom:hover .title_card {
+   transform: translateY(-75px);
+}
+.title_card {
+    transition: 0.5s;
+    width: 85%;
+
+}
+
+.product_card_custom::after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.product_card_custom:hover.product_card_custom::after {
+    height: 100%;
+    opacity: 0.7;
+}
+.container_card {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.link_card {
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    font-family: 'Kanit', sans-serif;
+    opacity: 0;
+    transition: 0.2s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#link_cardSMW {
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    font-family: 'Kanit', sans-serif;
+    opacity: 0;
+    transition: 0.2s;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.product_card_custom:hover .link_card {
+    opacity: 1;
+}
+.product_card_custom:hover #link_cardSMW {
+    opacity: 1;
+}
+/* FINE SEZIONE GOTY */
+
+/* VISUALIZZAZIONNI CLIENTI */
+.box-viewer{
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.img-giochi{
+    background: linear-gradient(90deg, rgba(4, 4, 4, 0.843) 0%, rgba(14, 30, 14, 0.698) 50%, rgba(112, 114, 112, 0.692) 100%), url(./media/visalizzazione.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    width: 100%;
+    height: 60vh;
+}
+
+.testo-giochi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding-left: 20%;
+}
+/* FINE VISUALIZZAZIONNI CLIENTI */
+
+
+/* RECENSIONI */
+.container_img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    
+}
+
+.img_review_custom {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);   
+}
+
+.container_review {
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.text_container {
+    height: auto;
+}
+
+.profile_container {
+    position: absolute;
+    bottom: 30px;
+    width: 400px;
+}
+
+/* FINE RECENSIONI */
+
+/* SWIPER */    
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #272727;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    margin: 100px auto;
+    width: 480px;
+    height: 360px;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 20px;
+    /* font-weight: bold; */
+    color: #fff;
+}
+
+.swiper-slide:nth-child(1n) {
+    background-color: rgb(206, 17, 17);
+}
+
+.swiper-slide:nth-child(2n) {
+    background-color: rgb(0, 140, 255);
+}
+
+.swiper-slide:nth-child(3n) {
+    background-color: rgb(10, 184, 111);
+}
+
+.swiper-slide:nth-child(4n) {
+    background-color: rgb(211, 122, 7);
+}
+
+.swiper-slide:nth-child(5n) {
+    background-color: rgb(118, 163, 12);
+}
+
+.swiper-slide:nth-child(6n) {
+    background-color: rgb(180, 10, 47);
+}
+
+.swiper-slide:nth-child(7n) {
+    background-color: rgb(35, 99, 19);
+}
+
+.swiper-slide:nth-child(8n) {
+    background-color: rgb(0, 68, 255);
+}
+
+.swiper-slide:nth-child(9n) {
+    background-color: rgb(218, 12, 218);
+}
+
+.swiper-slide:nth-child(10n) {
+    background-color: rgb(54, 94, 77);
+}
+
+/* FINE SWIPER */
+
+
+
+/* FOOTER */
+
+
+
+.footer{
+    background-color: #000;
+}
+
+.star-trustpilot{
+    color: #00B67A;
+}
+
+.trustpilot{
+    color: white;
+}
+
+.fa-square-full{
+    color: #00B67A;
+}
+
+.star-reviews-trustpilot{
+    color: white;
+}
+
+.trustscore{
+    color: white;
+}
+
+.listafooter{
+    color: white;
+    background-color: transparent;
+    list-style: none;
+    text-decoration: none;
+    margin-top: 60px;    
+}
+
+
+.listafooter:hover{
+    color: red;
+}
+
+.icone-lista-footer{
+    color: red;
+}
+
+
+.icons-footer{
+    background-color: #4342428b;
+    padding: 5px;
+    border-radius: 100%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    text-decoration: none;
+}
+
+.fa-discord{
+    color: #5d6feb;
+}
+
+.fa-instagram{
+    background-image: linear-gradient(to right, #bc2a8d, #e95950);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.fa-facebook{
+    color: #106bff;
+}
+
+.fa-youtube{
+    color: #ed0713;
+}
+
+.fa-twitch{
+    color: #8C44F7
+}
+
+.boxstore{
+    height: 14vh;
+}
+
+.applebutton{
+    border: 2px solid hsla(0,0%,100%,.2);
+    background-color: transparent;
+    border-radius: 7px;    
+    padding: 13px 21px;  
+}
+
+.applelink {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.appleimg{
+    height: 50px;
+    width: 150px;
+}
+
+.androidbutton{
+    border: 2px solid hsla(0,0%,100%,.2);
+    background-color: transparent;
+    border-radius: 7px;    
+    padding: 13px 21px;      
+}
+
+.androidlink {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none; 
+}
+
+.androidimg{
+    height: 50px;
+    width: 150px;
+}
+
+.divider {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+.text-end-footer {
+    color: white;
+}
+
+/* END FOOTER */
